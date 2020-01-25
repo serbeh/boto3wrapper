@@ -26,7 +26,7 @@ def list_objects(self, prefix=None) -> List[str]:
 ```python
 import boto3wrapper
 
-s3 = boto3wrapper.Boto3wrapper('bucket-name', default_path='./weights')
+s3 = boto3wrapper.Boto3Wrapper('bucket-name', default_path='./weights')
 ...
 
 s3.list_objects(prefix='weights/project/')  # List all objects under 'weights/project/'
